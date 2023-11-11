@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Museum of Odds & Ends</title>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <!--Navigation menu-->
+            
+            <!--use of predefined navigation or nav which is a semantic html element allows for better accesibility-->
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="current" tabindex="1">Museum of Odds & Ends</a></li> <!--by clearly mentioning tabindex, we allow for better usability-->
+                    <li><a href="placeholder.html" tabindex="2">Visit Us</a></li>
+                    <li><a href="placeholder.html" tabindex="3">Shop</a></li>
+                    <li><a href="placeholder.html" tabindex="4">Our History</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Main Content Section -->
+        <main id="main-content">    <!--using id main-content allows to make the main content more focusable-->  
+            <!-- Page Title -->
+            <h2>Museum of Odds & Ends</h2>
+            <p>Walton Hall, Milton Keynes</p>     
+            <!-- Gallery Section -->
+            <div class="gallery">
+                <!-- Gallery Item 1(this is the image being displayed) -->
+                <div class="gallery-item">
+                    <a href="https://www.europeana.eu/en/item/440/item_UBMLSJFMKZCDOGRRMBW2UY5RDAL3V4IP" tabindex="5"><img src="imgs/1.jpeg" alt="Image 1"></a>
+                    <a href="https://www.europeana.eu/en/item/440/item_UBMLSJFMKZCDOGRRMBW2UY5RDAL3V4IP" class="gallery-title" tabindex="6">View Details</a>
+                </div>
+                 <!-- tabindex added to improve usability -->
+                <!-- Gallery Item 2(this is the image being displayed) -->
+                <div class="gallery-item">
+                    <a href="https://www.europeana.eu/en/item/369/_129030" tabindex="7"><img src="imgs/3.jpeg" alt="Image 3"></a>
+                    <a href="https://www.europeana.eu/en/item/369/_129030" class="gallery-title" tabindex="8">Three red-figure attic vases</a>
+                </div>
+                <!-- Gallery Item 3(this is the image being displayed) -->
+                <div class="gallery-item">
+                    <a href="https://www.europeana.eu/en/item/325/MG061" tabindex="9"><img src="imgs/4.jpeg" alt="Image 4"></a>
+                    <a href="https://www.europeana.eu/en/item/325/MG061" class="gallery-title" tabindex="10">Bronze Enamel Ring Pin</a>
+                </div>
+                <!-- Gallery Item 4(this is the image being displayed) -->
+                <div class="gallery-item">
+                    <a href="https://www.europeana.eu/en/item/2063624/UK_280_014" tabindex="11"><img src="imgs/5.jpeg" alt="Image 5"></a>
+                    <a href="https://www.europeana.eu/en/item/2063624/UK_280_014" class="gallery-title" tabindex="12">An Overshot Mill in Wales</a>
+                </div>
+                <!-- Gallery Item 5(this is the image being displayed) -->  
+                <div class="gallery-item">
+                    <a href="https://www.europeana.eu/en/item/854/NHMUKXBMNHXEXXNHMUK013979616" tabindex="13"><img src="imgs/6.jpeg" alt="Image 6"></a>
+                    <a href="https://www.europeana.eu/en/item/854/NHMUKXBMNHXEXXNHMUK013979616" class="gallery-title" tabindex="14">"Crambus perlella (Scopoli, 1763) "</a>
+                </div>
+                <!-- Gallery Item 6(this is the image being displayed) --> 
+                <div class="gallery-item">
+                    <a href="https://www.europeana.eu/en/item/2048221/europeana_fashion_496757" tabindex="15"><img src="imgs/12.jpeg" alt="Image 12"></a>
+                    <a href="https://www.europeana.eu/en/item/2048221/europeana_fashion_496757" class="gallery-title" tabindex="16">"Two girls, with cempaka flowers in their hair"</a>
+                </div>   
+            </div>   
+        </main> 
+        <!-- News Sidebar Section (used aside for sidebar representation)-->
+        <aside id="news-sidebar">  <!--use of aside allows us to make the code more usable by explaining that this content is connected to the main content but is
+             not directly the main content-->
+            <h2>News</h2>
+            <!-- News item 1 -->
+            <div class="news-item">
+                <h3>Closure of Museum</h3>
+                <p class="date">October 15, 2023</p>
+                <p class="text">The museum will be closed on October 28th, 2023 due to some maintenance. All concerned are advised to note!</p>
+            </div>
+            <!-- News item 2 -->
+            <div class="news-item">
+                <h3>New artpiece from Egypt</h3>
+                <p class="date">October 10, 2023</p>
+                <p class="text">A new artpiece is being brought to the museum for an exhibition. 
+                Be sure to avail this opportunity to check it out!</p>
+            </div>       
+        </aside>
+    </body>
+</html>

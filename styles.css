@@ -1,0 +1,144 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*added specifications to body of page*/
+body {
+    font-size: 14px;
+    color: #333333;
+    font-family: Times, "Times New Roman", Georgia, serif;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/*rules for header*/
+header {
+    display: flex;
+    align-items: center; /*aligned items with the vertical center of header*/
+    margin-top: 20px;
+    background-color: #333333;
+    color: #fefefe;
+    height: 35px; /*made the height of the header 35px to make it appealing*/
+    width: 100%; /* Made the header span the full width */
+    text-align: left; /* Center aligned header content */
+}
+
+/*rules for header links*/
+nav ul {   
+    margin-left: 20px; /*added space between the left of the first link and the right of the header start*/
+    list-style: none;
+}
+
+/*rules for header links*/
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Adjusted spacing between links */
+}
+
+/*rules for header links*/
+nav a {
+    /*added required specifications*/ 
+    font-size: 120%;
+    text-decoration: none;
+    color: #fefefe;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s; /*added transition of 0.3 seconds to make it smooth*/
+}
+
+/*allowed for hover and focus to work properly according to requirements*/
+nav a:hover, nav a:focus, nav a.current {  /*use of proper keyboard focus commands allows us to make the page more accesible*/
+    border-color: #ff0000;
+}
+
+/*added specifications for the main content area*/
+/*calling this in main using id main-content allows to make the main content more focusable*/
+#main-content {
+    width: 75%; /* Adjusted the width for the main content */
+    float: left; /* Position the main content on the left */
+}
+/*added specification for main content heading*/
+#main-content h2{
+    margin-top: 20px;   /*added space between header and 
+    main content heading*/
+}
+
+/*added rules for the gallery or the image section*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px; /*added space between headings in the main area and gallery*/
+}
+
+.gallery-item {
+    text-align: left;
+    width: calc(33.33% - 20px); /*adjusted the width of each image to make it so only 3 images appear in 
+    one row of gallery and left 20px for some space between gallery and news sidebar*/
+    margin-right: 10px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+/*added class for bottom text of images*/
+.gallery-title{
+    color: #333333;
+    border-bottom: 0px;
+    text-decoration: none;
+}
+
+/*added class for gallery images*/
+.gallery-item a img {
+    max-width: 100%;
+    height: 150px;
+    width: 220px;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    
+}
+
+/*allowed for hover and focus to work properly according to requirements*/
+.gallery-item a:hover, .gallery-item a:focus {  /*use of proper keyboard focus commands allows us to make the page more accesible*/
+    text-decoration: underline;
+}
+
+/*added rules for news sidebar*/
+#news-sidebar {
+    width: 25%; /* Adjusted the width for the news sidebar */
+    margin-top: 90px; /*aligned news sidebar with gallery according to wireframe image*/
+    padding: 0px; /* Reduced the padding */
+    display: flex;
+    flex-direction: column; /* Displayed news items vertically */
+    float: right; /*made the sidebar appear right*/
+}
+
+/*added rules for news sidebar heading*/
+#news-sidebar h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*added rules for individual news item*/
+.news-item {
+    margin-top: 10px; /*added space between news heading and news items*/
+    margin-bottom: 20px; /* Added space between news items */
+}
+
+.news-item h3,
+.news-item p.date {
+    margin: 0; /* Removed space between heading and date */
+}
+
+.news-item p.text {
+    margin-top: 10px; /* Added space between date and paragraph text */
+}
+
+/*Responsive*/
+@media only screen and (max-width: 480px) 
+{
+    /*small devices smartphone*/
+    main,
+    aside 
+    {
+        grid-column: 1 / span 5;
+    }
+}
